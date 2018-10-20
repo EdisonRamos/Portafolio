@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>buscarClientesPorRut</servlet-name>
+        <servlet-class>MasterBikes.servlet.buscarClientesPorRut</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>agregarCliente</servlet-name>
+        <servlet-class>MasterBikes.servlet.agregarClientes</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>agregarProductos</servlet-name>
+        <servlet-class>MasterBikes.servlet.agregarProductos</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>buscarClientesPorRut</servlet-name>
+        <url-pattern>/buscarClientesPorRut</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>agregarCliente</servlet-name>
+        <url-pattern>/agregarCliente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>agregarProductos</servlet-name>
+        <url-pattern>/agregarProductos</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
